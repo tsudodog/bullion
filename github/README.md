@@ -2,6 +2,7 @@
 
 # Branches
 
+## Clean Merged Branches
 
 Remove all merged branches that are not master or dev.
 This command uses several smaller tools to accomplish this task, namely grep for text searching and xargs to paramaterize the output into git branch. 
@@ -13,3 +14,5 @@ xargs -n 1 means that 1 count will tokenize the output into git branch d. Basica
 ```
 git branch --merged | grep -v -e master -e dev | xargs -n 1 git branch -d 
 ```
+
+[link](https://stevenharman.net/git-clean-delete-already-merged-branches)
