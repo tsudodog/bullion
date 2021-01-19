@@ -17,7 +17,12 @@ psql
 
 ```
 
+### USERS
+Here is an article i used for learning about the interactive user in postgresql
+[article](https://ubiq.co/database-blog/create-user-postgresql/)
+
 create a user for remote login
+
 
 ```
 docker exec -it dev-postgres bash
